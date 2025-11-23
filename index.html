@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RACER No.1</title>
+  <link rel="stylesheet" href="styles.css" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RACER No.1</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="ui-top">
+  <h1>RACER No.1</h1>
+  <div id="hud">
+    <div id="score">Score: 0</div>
+    <div id="level">Level: 1</div>
+  </div>
+</div>
+
+<div class="canvas-wrap">
+  <canvas id="gameCanvas" width="500" height="650"></canvas>
+</div>
+
+<div class="menu" id="menu">
+  <button id="newGameBtn">New Game</button>
+  <button id="resumeBtn" disabled>Resume</button>
+  <button id="exitBtn">Exit Game</button>
+  <p class="instructions">Use left / right arrows to move</p>
+</div>
+
+<button id="restartBtn">Restart</button>
+
+<!-- AUDIO -->
+<audio id="bgAudio" src="Maan Meri Jaan.mp3" loop></audio>
+<audio id="crashAudio" src="crash.mp3"></audio>
+
+<script src="game.js"></script>
+</body>
+</html>
